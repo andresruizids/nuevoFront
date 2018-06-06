@@ -1,0 +1,86 @@
+<!--
+  Generated template for the CrearrestaurantePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>crearrestaurante</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="formularioCrearRestaurante" (ngSubmit)="saveData()">
+
+    <ion-list>
+      <ion-item>
+        <ion-icon name="finger-print" item-start></ion-icon>
+        <ion-label stacked>Nit:</ion-label>
+        <ion-input formControlName="nit" type="text" placeholder="Nit"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="paper" item-start></ion-icon>
+        <ion-label stacked>Razon Social:</ion-label>
+        <ion-input formControlName="razonSocial" type="text" placeholder="Razon Social"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="paper" item-start></ion-icon>
+        <ion-label stacked>Razon Comercial:</ion-label>
+        <ion-input formControlName="razonComercial" type="text" placeholder="Razon Comercial"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="logo-buffer" item-start></ion-icon>
+        <ion-label stacked>Ciudad:</ion-label>
+        <ion-input formControlName="ciudad" type="text" placeholder="Ciudad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="flag" item-start></ion-icon>
+        <ion-label stacked>Barrio:</ion-label>
+        <ion-input formControlName="barrio" type="text" placeholder="Barrio"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="flag" item-start></ion-icon>
+        <ion-label stacked>Direccion:</ion-label>
+        <ion-input formControlName="direccion" type="text" placeholder="Direccion"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="phone-portrait" item-start></ion-icon>
+        <ion-label stacked>Telefono:</ion-label>
+        <ion-input formControlName="telefono" type="email" placeholder="Telefono"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        <ion-label stacked>Correo electronico:</ion-label>
+        <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="cash" item-start></ion-icon>
+        <ion-label stacked>Precio Minimo:</ion-label>
+        <ion-input formControlName="precioMinimoPlato" type="email" placeholder="Minimo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="cash" item-start></ion-icon>
+        <ion-label stacked>Precio maximo:</ion-label>
+        <ion-input formControlName="precioMaximoPlato" type="text" placeholder="Maximo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="create" item-start></ion-icon>
+        <ion-label stacked>Tipo Menu:</ion-label>
+        <ion-input formControlName="tipoMenu" type="text" placehoder="Menu"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="create" item-start></ion-icon>
+        <ion-label stacked>Puntuacion:</ion-label>
+        <ion-input formControlName="puntuacion" type="email" placeholder="Puntuacion"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!formularioCrearRestaurante.valid" (click)="saveData()">Guardar</button>
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content class="cards-bg social-cards">
+
+
+
+
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+  <ion-fab top right edge>
+    <button ion-fab mini>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list>
+      <button ion-fab (click)="onClick()">
+        <ion-icon name="restaurant"></ion-icon>
+
+      </button>
+
+      <button ion-fab>
+        <ion-icon name="map"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-card>
+    <ion-item>
+      <h2>Restaurante la pastas</h2>
+      <p>November 5, 2015</p>
+    </ion-item>
+    <ion-card-content>
+      <p>Un increible lugar para ir en familia.</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          12 Likes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          15 Comments
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          1h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-item>
+      <h2>Restaurante la pastas</h2>
+      <p>November 5, 2017</p>
+    </ion-item>
+    <ion-card-content>
+      <p>Un increible lugar para ir en familia.</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          12 Likes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          4 Comments
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+
+
+  <ion-card>
+    <ion-item>
+      <h2>Restaurante la pastas</h2>
+      <p>November 5, 2015</p>
+    </ion-item>
+    <ion-card-content>
+      <p>Un increible lugar para ir en familia.</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          12 Likes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          4 Comments
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+
+
+
+</ion-content>
+
+<style>
+  .social-cards ion-col {
+    padding: 0;
+  }
+</style>
